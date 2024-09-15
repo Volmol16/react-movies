@@ -22,7 +22,7 @@ function Main() {
   };
 
   useEffect(() => {
-    fetch(`http://www.omdbapi.com/?apikey=30f998c4&s=avengers`)
+    fetch(`https://www.omdbapi.com/?apikey=30f998c4&s=avengers`)
       .then((response) => response.json())
       .then((data) => {
         setMovies(data.Search);
