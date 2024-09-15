@@ -10,7 +10,7 @@ function Main() {
   const searchMovies = (str, type = "all") => {
     setLoading(true);
     fetch(
-      `http://www.omdbapi.com/?apikey=30f998c4&s=${str}${
+      `https://www.omdbapi.com/?apikey=30f998c4&s=${str}${
         type !== "all" ? `&type=${type}` : ""
       }`
     )
